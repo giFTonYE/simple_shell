@@ -48,7 +48,7 @@ typedef struct liststr
 	int num;
 	char*str;
 	struct liststr*next
-}list_t;
+};list_t;
 
 /**
  *struct passinfo - contains pseudo-arguements to pass into a function,
@@ -120,16 +120,15 @@ void fork_cmd(info_t*);
 
 /*toem_parser.c*/
 int is_cmd(info_t*, char*);
-char*dup_chars(char*, int, it);
+char*dup_chars(char*, int, int);
 char*find_path(info_t*,char*,char*);
 
 /*loophsh.c*/
 int loophsh(char**);
 
 /*toem_errors.c*/
-void_eputs(char*);
+void_puts(char*);
 int_putfd(char c, int fd);
-int_putsfd(char*str,int fd);
 
 /*toem_string.c*/
 int _strlen(char*);
